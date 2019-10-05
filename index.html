@@ -13,23 +13,19 @@
   
     <header class="main-header">
 	    <nav class="main-navigation">
-	      <div class="main-navigation-wrapper">
-		    <div class="container">
-	            <a class="main-header-logo">
-	               <img src="png/sedona-logo.png" width="138" height="70" alt="Логотип Sedona"/>
-	            </a>
-		        <ul class="site-navigation">
-		           <li><a href="info.html">Информация</a></li>
-		           <li><a href="foto.html">Фото и видео</a></li>
-		           <li><a href="map.html">Карта штата</a></li>
-		           <li><a href="hotels.html">Гостиницы</a></li>
-		        </ul>
-			</div>
-		  </div>
+	        <a class="main-header-logo">
+	            <img src="png/sedona-logo.png" width="138" height="70" alt="Логотип Sedona"/>
+	        </a>
+		    <ul class="site-navigation">
+		        <li><a href="info.html">Информация</a></li>
+		        <li><a href="foto.html">Фото и видео</a></li>
+		        <li><a href="map.html">Карта штата</a></li>
+		        <li><a href="hotels.html">Гостиницы</a></li>
+		    </ul>	
 	    </nav>
     </header>
 	
-    <main>
+    <main class="container">
 	    <img src="png/welcome.png" width="188" height="45" alt="welcome"/>
 	    <img src="png/to the gorgeous.png" width="176" height="30" alt="to the gorgeous"/>
 	    <h3>СЕДОНА - НЕБОЛЬШОЙ ГОРОДОК В АРИЗОНЕ, </br>
@@ -109,15 +105,35 @@
 		</div>
     </main>
 	
-    <footer>
+    <footer class="main-footer">
 	    <div class="footer-search">
 		   <h2>ЗАИНТЕРЕСОВАЛИСЬ?</h2>
 		   <p>УКАЖИТЕ ПРЕДПОЛОГАЕМЫЕ ДАТЫ ПОЕЗДКИ,</br>
 		      И МЫ ПОКАЖЕМ ВАМ ЛУЧШИЕ ПРЕДЛОЖЕНИЯ ГОСТИНИЦ В СЕДОНЕ</p>
 		</div>
 		<div class="footer-map">
+		   <!--<img src="png/map.png" width="1200" height="593" alt="карта штата Sedona"/>-->
+		   <div class="footer-contacts-wrapper">
+               <a class="button js-button-map" href="map.html"></a> <!--для модальной карты-->
+		   </div>
 		</div>
-		<div class="footer-social">
+		<div class="">
+		    <div class="visit">
+	           <h4>#VISITSEDONA</h4>
+	        </div>
+		    <div class="footer-social"> 
+		       <ul>
+			      <li><a class="social-button social-tw" href="#"><span class="visually-hidden">Twitter</span><!--<svg src="svg/twitter.svg" width="17" height="15" alt="Twitter"></svg>--></a></li>
+		          <li><a class="social-button social-fb" href="#"><span class="visually-hidden">Facebook</span><!--<svg src="svg/fb-icon.svg" width="12" height="22" alt="Facebook"></svg>--></a></li>
+		          <li><a class="social-button social-yb" href="#"><span class="visually-hidden">Youtube</span><!--<svg src="svg/yuotube.svg" width="20" height="16" alt="Youtube"></svg>--></a></li>
+		       </ul>
+		    </div>
+		    <div class="html-academy">
+	            <ul>
+		          <li>WEBSITE BY</li>
+		          <li><a class="social-button social-ac" href="https://htmlacademy.ru/intensive/htmlcss"><span class="visually-hidden">HTML academy</span><!--<svg src="svg/logo-htmlacademy.svg" width="115" height="41" alt="HTML academy"></svg>--></a></li>
+		        </ul> 
+	        </div> 
 		</div>
     </footer>
 	
