@@ -166,7 +166,7 @@ input[type="radio"].visually-hidden {
 
 .intro {
 	width: 1200px;
-	height: 510px;
+	/* height: 510px; */
 	
 	background-image: url("../jpg/background-m.jpg");
 	background-position: top center;
@@ -189,20 +189,111 @@ input[type="radio"].visually-hidden {
 }
 
 .intro-2 {
-	margin-top: 5px;
+	margin-top: 8px;
+	
+	display: flex;
+	align-items: center;
 }
 
 .intro-3 {
-	margin-top: 52px;
+	margin-top: 50px;
 }
 
 .intro-4 {
-	margin-top: 56px;
+	margin-top: 55px;
 }
 
 .intro-5 {
-	margin-top: 11px;
+	margin-top: 17px;
 }
+
+.advantages-intro {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	flex-direction:  column;
+	/* align-content: center; */
+	align-items: center;  /* почему не работает? */
+	margin: 0;
+	padding: 0;
+}
+ 
+.advantages-intro h3 {
+	display: flex;
+	flex-wrap: wrap;
+	align-content: center;
+	
+	font-size: 21px;
+	line-height: 26px;
+	margin: 62px auto 0 auto;
+ }
+ 
+ .advantages-intro p {
+	font-size: 14px;
+	line-height: 26px;
+	margin: 32px auto 53px auto;
+ }
+ 
+.advantages-list{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	flex-direction:  column;
+	margin: 0;
+	padding: 0;
+}
+
+.advantages {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	flex-direction:  row;
+	margin: 0;
+	padding: 0;
+	width: 1200px;
+	min-height: 256px;
+}
+
+.advantages-1 {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	flex-direction:  column;
+	align-items: center;
+	margin: 0;
+	padding: 0;
+	
+	width: 400px;
+	
+	background-color: #81b3d2;
+}
+
+.advantages-1 h3 {
+	font-size: 18px;
+	line-height: 21px;
+}
+
+.advantages-1 p {
+	font-size: 14px;
+	line-height: 21px;
+}
+
+.advantages-img {
+	width: 800px;
+	
+}
+
+.advantages-icon {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	flex-direction:  row;
+	margin: 0;
+	padding: 0;
+}
+ 
+ 
+ 
 
 
 
