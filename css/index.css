@@ -212,8 +212,7 @@ input[type="radio"].visually-hidden {
 	flex-wrap: wrap;
 	justify-content: center;
 	flex-direction:  column;
-	/* align-content: center; */
-	align-items: center;  /* почему не работает? */
+	text-align:  center;
 	margin: 0;
 	padding: 0;
 }
@@ -255,42 +254,136 @@ input[type="radio"].visually-hidden {
 }
 
 .advantages-1 {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	flex-direction:  column;
-	align-items: center;
-	margin: 0;
-	padding: 0;
-	
-	width: 400px;
-	
+	width: 400px; 
 	background-color: #81b3d2;
+	color: #ffffff;
+	text-align:  center;
 }
 
 .advantages-1 h3 {
+	margin: 0;
+	margin-top: 45px;
+	
 	font-size: 18px;
 	line-height: 21px;
 }
 
 .advantages-1 p {
+	margin: 0;
+	margin-top: 25px;
+	
 	font-size: 14px;
 	line-height: 21px;
-}
-
-.advantages-img {
-	width: 800px;
-	
 }
 
 .advantages-icon {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
-	flex-direction:  row;
+	margin: 0;
+	padding-top: 55px;
+	padding-bottom: 85px;
+	width: 1200px;
+	
+	text-align:  center;
+}
+
+.advantages-icon h3 {
+	margin: 0;
+	margin-top: 30px;
+	font-size: 18px;
+	line-height: 21px;
+}
+
+.advantages-icon p {
+	margin: 0;
+	margin-top: 30px;
+	font-size: 14px;
+	line-height: 21px;
+}
+
+.advantages-2 {
+	width: 400px; 
+	background-color: #81b3d2;
+	color: #ffffff;
+	text-align:  center;
+}
+
+.advantages-2 h3 {
+	margin: 0;
+	margin-top: 45px;
+	
+	font-size: 18px;
+	line-height: 21px;
+}
+
+.advantages-2 p {
+	margin: 0;
+	margin-top: 25px;
+	
+	font-size: 14px;
+	line-height: 21px;
+}
+
+.advantages-icon.non{
 	margin: 0;
 	padding: 0;
+	min-height: 256px;
+	background-image: url("../png/layer2.png");
 }
+
+.advantages-3 h3,
+.advantages-4 h3,
+.advantages-5 h3 {
+	margin: 0;
+	margin-top: 50px;
+	font-size: 18px;
+	line-height: 21px;
+}
+
+.advantages-3 p,
+.advantages-4 p,
+.advantages-5 p {
+	margin: 0;
+	margin-top: 30px;
+	font-size: 14px;
+	line-height: 21px;
+}
+
+.main-footer.container {
+	margin: 0 auto;
+	padding: 0 40px;
+	box-sizing: border-box;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.footer-search {
+	width: 1200px;
+	min-height: 291px;
+	text-align: center;
+}
+ 
+.footer-search h2 {
+	margin: 0;
+	margin-top: 55px;
+	
+	font-size: 30px;
+	line-height: 36px;
+ }
+ 
+.footer-search p {
+	margin: 0;
+	margin-top: 35px;
+	margin-bottom: 50px;
+	
+	font-size: 14px;
+	line-height: 21px;
+ }
+
+
+
+
  
  
  
