@@ -18,7 +18,7 @@
 		        <li><a href="info.html">ИНФОРМАЦИЯ</a></li>
 		        <li><a href="foto.html">ФОТО И ВИДЕО</a></li>
 			</ul>
-			<a class="main-header-logo">
+			<a class="main-header-logo" href="#">
 	            <img src="png/sedona-logo.png" width="138" height="70" alt="Логотип Sedona"/>
 	        </a>
 			<ul class="site-navigation">
@@ -122,15 +122,15 @@
 		   <a class="button button-search" href="#">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</a>	  
 		</div>
 		<div class="footer-map">
-		   <img src="png/map.png" width="1200" height="593" alt="карта штата Sedona"/>
+		   <!-- <img src="png/map.png" width="1200" height="593" alt="карта штата Sedona"/> -->
 		   <div class="footer-contacts-wrapper">
                <a class="button js-button-map" href="map.html"></a> <!--для модальной карты-->
 		   </div>
-		</div>
-		<div class="footer-footer">
+		
+		  <div class="footer-footer">
 		    <ul class="footer-navigation">
-		        <li class="visit">
-	              <h4>#VISITSEDONA</h4>
+		        <li>
+	              <a class="visit" href="#"><h4>#VISITSEDONA</h4></a>
 			    </li>
 			    <li> 
 		          <ul class="footer-social">
@@ -142,14 +142,23 @@
 			    <li>
 	              <ul class="html-academy">
 		            <li>WEBSITE BY</li>
-		            <li><a class="social-button social-ac" href="https://htmlacademy.ru/intensive/htmlcss"><span class="visually-hidden">HTML academy</span><!--<svg src="svg/logo-htmlacademy.svg" width="115" height="41" alt="HTML academy"></svg>--></a></li>
+		            <li><a class="social-button-logo social-ac" href="https://htmlacademy.ru/intensive/htmlcss"><span class="visually-hidden">HTML academy</span><!--<svg src="svg/logo-htmlacademy.svg" width="115" height="41" alt="HTML academy"></svg>--></a></li>
 		          </ul> 
 			    </li>  
 		    </ul>
+		  </div>
 		</div>
     </footer>
 	
-	<section class="modal">
+	<section class="modal modal-search">
+		<form class="search-form" action="" method="post">	
+		  <!-- <div class="search">
+		    <input type="search">
+		  </div> -->
+		  
+		  <button class="button" type="submit">НАЙТИ</button>
+		</form>
+		<button class="modal-close" type="button">Закрыть</button>
 	</section>
 	
 	<script></script>
