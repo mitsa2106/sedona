@@ -510,3 +510,65 @@ input[type="radio"].visually-hidden {
 }
 
 
+/*Всплывающая форма*/
+
+.modal {
+	position: fixed;
+	/* display: none; /*скрываем*/ */
+	color: #000000;
+	
+	background-color: #ffffff;
+	box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
+} 
+
+.modal-search {
+	top: 50px; /*50%;*/
+	left: 50%;
+	
+	width: 460px;
+	margin-left: -330px; /* центруем(460+(100+100))/2=330 */ 
+	/* transform: translate(-50%, -50%); /*вместо margin-left можно*/ 
+	padding: 55px;
+}
+
+.search-form p {
+	margin: 0;
+	margin-bottom: 30px;
+}
+
+.search-form input[type="date"],
+.search-form input[type="number"] {
+	box-sizing: border-box; 
+	font: inherit;
+	color: #000000;
+	text-transform: uppercase;
+	
+	background-color: #f2f2f2;
+	border: 1px solid #f2f2f2;
+}
+
+.search-form input[type="date"] {
+	width: 346px;
+	padding: 6px 12px;
+	padding-right: 40px;
+}
+
+.search-form input[type="number"] {
+	width: 114px;
+	padding: 6px 35px;
+	text-align: center;
+}
+
+.search-form input:focus {
+	background-color: #ffffff;
+	border: 2px solid #f2f2f2;
+}
+
+.search-icon-check-in,
+.search-icon-check-out {
+	background-image: url("../svg/calendar.svg");
+	background-position: 300px center;
+	background-repeat: no-repeat;
+}
+
+

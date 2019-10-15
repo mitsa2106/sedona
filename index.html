@@ -119,7 +119,7 @@
 		   <h2>ЗАИНТЕРЕСОВАЛИСЬ?</h2>
 		   <p>УКАЖИТЕ ПРЕДПОЛОГАЕМЫЕ ДАТЫ ПОЕЗДКИ,</br>
 		      И МЫ ПОКАЖЕМ ВАМ ЛУЧШИЕ ПРЕДЛОЖЕНИЯ ГОСТИНИЦ В СЕДОНЕ</p>
-		   <a class="button button-search" href="#">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</a>	  
+		   <a class="button button-search" href="#">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</a>	  <!-- кнопка для открытия и закрытия формы поиска гостиницы -->
 		</div>
 		<div class="footer-map">
 		   <!-- <img src="png/map.png" width="1200" height="593" alt="карта штата Sedona"/> -->
@@ -152,14 +152,29 @@
 	
 	<section class="modal modal-search">
 		<form class="search-form" action="" method="post">	
-		  <!-- <div class="search">
-		    <input type="search">
-		  </div> -->
+		    <p><!-- <div class="check"> -->
+			   <label for="check-in">ДАТА ЗАЕЗДА:</label>
+			   <input class="search-icon-check" type="date" name="check" id="check-in" placeholder="24 апреля 2017">
+		    </p><!-- </div> -->
+			
+			<p><!-- <div class="check"> -->
+			   <label for="check-out">ДАТА ВЫЕЗДА:</label>
+			   <input class="search-icon-check" type="date" name="check" id="check-out" placeholder="4 июля 2017">
+		    </p><!-- </div> -->
+		  
+		    <p><!-- <div class="half-width"> -->
+			   <label for="adults">ВЗРОСЛЫЕ:</label>
+			   <input class="amount" type="number" name="amount" id="adults" min="0" max="100" step="1" placeholder="2">
+		    </p><!-- </div> -->
+			
+			<p><!-- <div class="half-width"> -->
+			   <label for="children">ДЕТИ:</label>
+			   <input class="amount" type="number" name="amount" id="children" min="0" max="100" step="1" placeholder="0">
+		    </p><!-- </div> -->
 		  
 		  <button class="button" type="submit">НАЙТИ</button>
 		</form>
-		<button class="modal-close" type="button">Закрыть</button>
-	</section>
+	</section>  <!--ПОИСК ГОСТИНИЦЫ является кнопкой открытия и кнопкой закрытия, при нажатие вспылвает-закрывается форма поиска. использовать togal. анимация- форма проявляется или выезжает слева-->
 	
 	<script></script>
 	
