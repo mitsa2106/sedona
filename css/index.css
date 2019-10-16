@@ -514,24 +514,30 @@ input[type="radio"].visually-hidden {
 
 .modal {
 	position: fixed;
-	/* display: none; /*скрываем*/ */
-	color: #000000;
 	
+	color: #000000;
 	background-color: #ffffff;
-	box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
+	background-image: url("../jpg/layer-modal.jpg");
+	background-position: 0 0;
+	background-repeat: repeat;
+	box-shadow: 0 10px 10px rgba(0, 0, 0, 0.7);
 } 
 
 .modal-search {
-	top: 50px; /*50%;*/
+	top: 50%;
 	left: 50%;
-	
-	width: 460px;
-	margin-left: -330px; /* центруем(460+(100+100))/2=330 */ 
-	/* transform: translate(-50%, -50%); /*вместо margin-left можно*/ 
+	/* display: none; /*скрываем*/ 
 	padding: 55px;
+	width: 460px;
+	transform: translate(-50%, -50%); /*центрируем по центру модальное окно*/
 }
 
-.search-form p {
+.search-form .check{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items:  center;
+	
 	margin: 0;
 	margin-bottom: 30px;
 }
@@ -564,11 +570,37 @@ input[type="radio"].visually-hidden {
 	border: 2px solid #f2f2f2;
 }
 
-.search-icon-check-in,
-.search-icon-check-out {
-	background-image: url("../svg/calendar.svg");
-	background-position: 300px center;
+.search-icon-check {   
+	background-image: url("../svg/calendar.svg"); /* поменять иконку на серую */
+	background-position: 317px center;
 	background-repeat: no-repeat;
 }
+
+.search-icon-check:hover { /*наведение*/
+    background-image: url("../svg/calendar.svg"); 
+}
+
+.search-icon-check:active { /*нажатие*/
+    background-image: url("../svg/calendar.svg"); /* поменять иконку на голубую */
+}
+
+.amount-icon {  
+}
+
+.search-form .half-width {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items:  center;
+	margin-bottom: 54px;
+}
+
+.search-form .button {
+	width: 100%;
+	margin-right: 0;
+	
+	padding: 16px 195px;
+}
+
 
 
