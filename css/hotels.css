@@ -161,22 +161,38 @@ input[type="radio"].visually-hidden {
 
 .filter {
 	width: 1200px;
-	height: 287px;
+	height: 217px;
 	
-	background-image: url("../jpg/background-hotels.jpg");
+	background-image: url("../jpg/background-hotels-m.jpg");
 	background-position: top center;
 	background-repeat: no-repeat;
 }
 
 .filter-wrapper {	
 	margin: 0;
-	padding: 29px 73px;
+	padding: 29px 73px 0;
 	
 	display: flex;
     justify-content: space-between;
     align-items: center; 
 	flex-direction: row;
 	list-style: none;
+}
+
+.box {
+	margin: 0;
+	padding: 0;
+	
+	display: flex;
+    justify-content: space-between;
+    align-items: center; 
+	flex-direction: row;
+	list-style: none;
+}
+
+.filter-infrastructure,
+.filter-type {
+    width: 240px;
 }
 
 .filter-infrastructure h3,
@@ -190,19 +206,21 @@ input[type="radio"].visually-hidden {
 	color: #ffffff;
 }
 
-.infrastructure-list {
+.infrastructure-list,
+.type-list {
 	margin: 0;
 	padding: 0;
-	list-style: none; 
-	
+	list-style: none; 	
 }
 
-.infrastructure-list li {
-	padding-bottom: 23px;
+.infrastructure-list li,
+.type-list li {
+	padding-bottom: 25px;
 	color: #ffffff;
 }
 
-.infrastructure li:last-child {
+.infrastructure li:last-child,
+.type-list li:last-child {
 	padding-bottom: 0;
 }
 
@@ -229,4 +247,160 @@ input[type="radio"].visually-hidden {
     border: 2px solid #ffffff;
     border-radius: 4px;
     background: inherit;
+}
+
+.checkbox + label:after { /*стили птички*/
+	content: '';
+    font-size: 25px;
+    position: absolute;
+    top: -4px;
+    left: 6px;
+    color: #ffffff;
+}
+
+.checkbox:checked + label:after {
+    opacity: 1;
+	content: '\2714';
+}
+
+.checkbox:disabled + label:after,
+.checkbox:disabled + label:before {
+	color: #6a6a6a;
+}
+
+.filter-range {
+  width: 330px;
+  margin: 0;
+  padding: 0;
+
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.filter-range h3 {
+	margin: 0;
+	padding: 0;
+    margin-bottom: 12px;
+
+    font-size: 16px;
+    line-height: 21px;
+}
+
+.price-controls {
+  position: relative;
+  
+  height: 36px;
+  margin-bottom: 20px;
+
+  font-size: 0;
+
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+}
+
+.price-controls::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  width: 2px;
+  height: 22px;
+
+  background: #ffffff;
+  transform: translate(-50%, -50%);
+}
+
+.price-controls label {
+  display: inline-block;
+
+  font-size: 14px;
+  line-height: 38px;
+  vertical-align: top;
+
+  cursor: pointer;
+}
+
+.price-controls .min-price,
+.price-controls .max-price {
+  width: 90px;
+  padding-left: 65px;
+}
+
+.price-controls input {
+  width: 50px;
+  margin: 0;
+
+  color: inherit;
+  font: inherit;
+
+  background: none;
+  border: none;
+}
+
+.range-controls {
+  position: relative;
+
+  margin-bottom: 32px;
+}
+
+.range-controls .scale {
+  height: 2px;
+
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.range-controls .bar {
+  width: 80%;
+  height: 2px;
+
+  background: #ffffff;
+}
+
+.range-toggle {
+  position: absolute;
+  top: -9px;
+
+  width: 4px;
+  height: 4px;
+
+  background: #ababab;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  cursor: pointer;
+}
+
+.range-toggle:hover {
+  background: #1c4f80;
+}
+
+.range-toggle-min {
+  left: 0;
+}
+
+.range-toggle-max {
+  left: 80%;
+}
+
+.btn-transparent {
+  display: block;
+  margin: 0 auto;
+  padding: 6px 35px;
+
+  font-size: 16px;
+  line-height: 21px;
+  color: #ffffff;
+  text-transform: uppercase;
+
+  background: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.btn-transparent:hover {
+  color: #000000;
+
+  background: #ffffff;
 }
