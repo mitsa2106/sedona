@@ -29,21 +29,40 @@
 	
 	<main class="container">
 	    <div class="filter">
+		  <div class="filter-wrapper">
 		    <div class="filter-infrastructure">
 			    <h3>ИНФРАСТРУКТУРА:</h3>
 			    <ul class="infrastructure-list">
-				    <li>БАССЕЙН</li>
-					<li>ПАРКОВКА</li>
-					<li>WI-FI</li>
+				    <li>
+					    <input type="checkbox" class="checkbox" id="sw" checked>
+		                <label for="sw">БАССЕЙН</label>
+					</li>
+					<li>
+					    <input type="checkbox" class="checkbox" id="pr" checked>
+		                <label for="pr">ПАРКОВКА</label>
+					</li>
+					<li>
+					    <input type="checkbox" class="checkbox" id="wf" checked>
+		                <label for="wf">WI-FI</label>
+					</li>
 			    <ul>
 			</div>
 			
 			<div class="filter-type">
 			   <h3>ТИП ЖИЛЬЯ:</h3>
 			   <ul class="type-list">
-				    <li>ГОСТИНИЦА</li>
-					<li>МОТЕЛЬ</li>
-					<li>АПАРТАМЕНТЫ</li>
+				    <li>
+					    <input type="checkbox" class="checkbox" id="ht" checked>
+		                <label for="ht">ГОСТИНИЦА</label>
+					</li>
+					<li>
+					    <input type="checkbox" class="checkbox" id="mt" checked>
+		                <label for="mt">МОТЕЛЬ</label>
+					</li>
+					<li>
+					    <input type="checkbox" class="checkbox" id="at" checked>
+		                <label for="at">АПАРТАМЕНТЫ</label>
+					</li>
 			    <ul>
 			</div>
 			
@@ -62,18 +81,75 @@
                 </div>
                 <button class="btn-transparent" type="submit">Показать</button>
             </div>
+		  </div>	
 		</div>
 		
 		<div class="search">
 		    <div class="classifieds">
+			    <h3>НАЙДЕНО: 3</h3>
+				<h4>СОРТИРОВКА</h4>
+			    <ul>
+					<li>ПО ЦЕНЕ</li>
+					<li>ПО ТИПУ</li>
+					<li>ПО РЕЙТИНГУ</li>
+				</ul>
+				<div class="icon-classifieds"></icon>
 			</div>
 			
 			<div class="classifieds-list">
-			<div>
+			    <div class="classifieds-item">
+			        <img src="jpg/.jpg" width="" height="" alt=""/>
+					<div class="reservation">
+					    <h3>AMARA RESORT & SPA</h3>
+						<p>ГОСТИНИЦА</p>
+						<p>ОТ 4000 Р.</p>
+						<a class="button" href="#">ПОДРОБНЕЕ</a>
+						<a class="button" href="#">ЗАБРОНИРОВАТЬ</a>
+					</div>
+					<div class="rating">
+					    <div class="stars"></div>
+						<p>РЕЙТИНГ: 8,5</p>
+					</div>
+				</div>
+			</div>
+			
+			<div class="classifieds-list">
+			    <div class="classifieds-item">
+			        <img src="jpg/.jpg" width="" height="" alt=""/>
+					<div class="reservation">
+					    <h3>DESERT QUAIL INN</h3>
+						<p>МОТЕЛЬ</p>
+						<p>ОТ 3000 Р.</p>
+						<a class="button" href="#">ПОДРОБНЕЕ</a>
+						<a class="button" href="#">ЗАБРОНИРОВАТЬ</a>
+					</div>
+					<div class="rating">
+					    <div class="stars"></div>
+						<p>РЕЙТИНГ: 8,9</p>
+					</div>
+				</div>
+			</div>
+			
+			<div class="classifieds-list">
+			    <div class="classifieds-item">
+			        <img src="jpg/.jpg" width="" height="" alt=""/>
+					<div class="reservation">
+					    <h3>VILLAS AT POCO DIABLO</h3>
+						<p>АППАРТАМЕНТЫ</p>
+						<p>ОТ 2000 Р.</p>
+						<a class="button" href="#">ПОДРОБНЕЕ</a>
+						<a class="button" href="#">ЗАБРОНИРОВАТЬ</a>
+					</div>
+					<div class="rating">
+					    <div class="stars"></div>
+						<p>РЕЙТИНГ: 9,2</p>
+					</div>
+				</div>
+			</div>
 		</div>
 	</main>
 	
-	<footer class="main-footer container">
+	<footer class="main-footer">
 	    <div class="footer-footer">
 		    <ul class="footer-navigation">
 		        <li>

@@ -15,7 +15,7 @@ body {
 	color: #000000;
 	
 	background-color: #ffffff;
-	box-shadow: 0 0 10px rgba(242,242,242,0.5); /* Параметры тени #f2f2f2*/
+	/* box-shadow: 0 0 10px rgba(242,242,242,0.5); /* Параметры тени #f2f2f2*/ */
 }
 
 html, body {
@@ -158,6 +158,7 @@ input[type="radio"].visually-hidden {
 	padding: 0;
 	box-sizing: border-box;
 }
+
 .intro {
 	width: 1200px;
 	/* height: 510px; */

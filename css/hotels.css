@@ -1,0 +1,232 @@
+@font-face {
+	font-family: "PT Sans", sans-serif;
+	font-style: normal;
+	font-weight: normal;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	
+	font-family: "PT Sans", sans-serif;
+	font-size: 14px;
+	line-height: 21px;
+	font-weight: 400;
+	color: #000000;
+	
+	background-color: #ffffff;
+	/* box-shadow: 0 0 10px rgba(242,242,242,0.5); /* Параметры тени #f2f2f2*/ */
+}
+
+html, body {
+	min-width: 1200px;
+	min-height: 1750px;
+}
+
+a {
+	text-decoration: none;
+	font-weight: 600;
+}
+
+/* /*чтобы картинки не вылазили за пределы родителя
+img {
+	max-width: 100%;
+	height: auto;
+} */
+
+/*скрываем ненужный тескт visualle-hidden*/
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+	position: absolute;
+	
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	
+	white-space: nowrap;
+	
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+
+.button  {
+	display: inline-block;
+	
+	font: inherit; /* шрифт наследуется родителя */
+	text-align: center; /* выравнивание текста по центру */
+    color: #ffffff;
+    vertical-align: middle; /* вертикальное выравнивание текста в строке по центру */
+    text-transform: uppercase; /*все символы заглавные*/
+    
+	font-size: 14px;
+    line-height: 21px;
+	font-weight: 600; 
+
+    background-color: #81b3d2; 
+    border: none;
+	box-sizing: border-box;
+}
+
+.button:hover /*наведение*/ {
+	background-color: #669ec0;
+}
+
+.button:active /*нажатие*/{
+	background-color: #5496bd;
+	opacity: 0.3;
+}
+
+.main-header {
+	width: 1200px;
+	padding: 0;
+	margin: 0 auto; 
+	box-sizing: border-box;
+}
+
+.main-navigation {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	position: relative; 
+	width: 1200px; 
+	
+	font-size: 14px;
+	line-height: 26px;
+	color: #000000;
+	background-image: url("../png/layer-main.png");
+	background-position: center;
+	background-repeat: repeat;
+}
+
+.main-header-logo {
+	display: flex;
+    justify-content: center;
+    align-items: flex-start;
+	
+	width: 138px;
+	height: 70px;
+	padding: 0;
+	
+	position: absolute; 
+	top: 0; 
+	left: 530px;
+}
+
+.site-navigation {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	
+    width: 530px;
+	
+	list-style: none;
+	text-transform: uppercase;
+	margin: 0;
+	padding: 0;
+}
+
+.site-navigation a{
+	display: block;
+	padding: 15px 20px /* 73px */;
+	
+	vertical-align: middle;
+	color: #000000;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus {
+	color: #81b3d2;
+}
+
+.site-navigation a:active {
+	color: #766357;
+}
+
+.site-navigation a:visited {
+	color: #766357;
+	font-weight: 400;
+}
+
+.container {
+	width: 1200px;
+	margin: 0 auto;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.filter {
+	width: 1200px;
+	height: 287px;
+	
+	background-image: url("../jpg/background-hotels.jpg");
+	background-position: top center;
+	background-repeat: no-repeat;
+}
+
+.filter-wrapper {	
+	margin: 0;
+	padding: 29px 73px;
+	
+	display: flex;
+    justify-content: space-between;
+    align-items: center; 
+	flex-direction: row;
+	list-style: none;
+}
+
+.filter-infrastructure h3,
+.filter-type h3{
+	margin: 0;
+	padding: 0;
+	margin-bottom: 29px;
+	
+	font-size: 16px;
+	line-height: 21px;
+	color: #ffffff;
+}
+
+.infrastructure-list {
+	margin: 0;
+	padding: 0;
+	list-style: none; 
+	
+}
+
+.infrastructure-list li {
+	padding-bottom: 23px;
+	color: #ffffff;
+}
+
+.infrastructure li:last-child {
+	padding-bottom: 0;
+}
+
+.checkbox {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+.checkbox + label {
+    position: relative;
+    padding: 0 0 0 40px;
+    cursor: pointer;
+}
+
+.checkbox + label:before { /*стили квадрата*/
+    content: '';
+    position: absolute;
+    top: -3px;
+    left: 0;
+    width: 19px;
+    height: 19px;
+  
+    border: 2px solid #ffffff;
+    border-radius: 4px;
+    background: inherit;
+}
