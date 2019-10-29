@@ -269,138 +269,220 @@ input[type="radio"].visually-hidden {
 }
 
 .filter-range {
-  width: 330px;
-  margin: 0;
-  padding: 0;
+    width: 330px;
+    margin: 0;
+    padding: 0;
 
-  color: #ffffff;
-  text-transform: uppercase;
+    color: #ffffff;
+    text-transform: uppercase;
 }
 
 .filter-range h3 {
 	margin: 0;
 	padding: 0;
-    margin-bottom: 12px;
+    margin-bottom: 10px;
 
     font-size: 16px;
     line-height: 21px;
 }
 
 .price-controls {
-  position: relative;
+    position: relative;
   
-  height: 36px;
-  margin-bottom: 20px;
+    height: 36px;
+    margin-bottom: 20px;
 
-  font-size: 0;
+    font-size: 0;
 
-  border: 2px solid #ffffff;
-  border-radius: 2px;
+    border: 2px solid #ffffff;
+    border-radius: 2px;
 }
 
 .price-controls::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
 
-  width: 2px;
-  height: 22px;
+    width: 2px;
+    height: 22px;
 
-  background: #ffffff;
-  transform: translate(-50%, -50%);
+    background: #ffffff;
+    transform: translate(-50%, -50%);
 }
 
 .price-controls label {
-  display: inline-block;
+    display: inline-block;
 
-  font-size: 14px;
-  line-height: 38px;
-  vertical-align: top;
+    font-size: 14px;
+    line-height: 38px;
+    vertical-align: top;
 
-  cursor: pointer;
+    cursor: pointer;
 }
 
 .price-controls .min-price,
 .price-controls .max-price {
-  width: 90px;
-  padding-left: 65px;
+    width: 90px;
+    padding-left: 65px;
 }
 
 .price-controls input {
-  width: 50px;
-  margin: 0;
+    width: 50px;
+    margin: 0;
 
-  color: inherit;
-  font: inherit;
+    color: inherit;
+    font: inherit;
 
-  background: none;
-  border: none;
+    background: none;
+    border: none;
 }
 
 .range-controls {
-  position: relative;
+    position: relative;
 
-  margin-bottom: 32px;
+    margin-bottom: 32px;
 }
 
 .range-controls .scale {
-  height: 2px;
+    height: 2px;
 
-  background: rgba(255, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 0.3);
 }
 
 .range-controls .bar {
-  width: 80%;
-  height: 2px;
+    width: 80%;
+    height: 2px;
 
-  background: #ffffff;
+    background: #ffffff;
 }
 
 .range-toggle {
-  position: absolute;
-  top: -9px;
+    position: absolute;
+    top: -9px;
 
-  width: 4px;
-  height: 4px;
+    width: 4px;
+    height: 4px;
 
-  background: #ababab;
-  border: 8px solid #ffffff;
-  border-radius: 50%;
-  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
-  cursor: pointer;
+    background: #ababab;
+    border: 8px solid #ffffff;
+    border-radius: 50%;
+    box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+    cursor: pointer;
 }
 
 .range-toggle:hover {
-  background: #1c4f80;
+    background: #1c4f80;
 }
 
 .range-toggle-min {
-  left: 0;
+    left: 0;
 }
 
 .range-toggle-max {
-  left: 80%;
+    left: 80%;
 }
 
 .btn-transparent {
-  display: block;
-  margin: 0 auto;
-  padding: 6px 35px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 26px;
+    padding: 6px 35px;
 
-  font-size: 16px;
-  line-height: 21px;
-  color: #ffffff;
-  text-transform: uppercase;
+    font-size: 16px;
+    line-height: 21px;
+    color: #ffffff;
+    text-transform: uppercase;
 
-  background: transparent;
-  border: 2px solid #ffffff;
-  border-radius: 2px;
-  cursor: pointer;
+    background: transparent;
+    border: 2px solid #ffffff;
+    border-radius: 2px;
+    cursor: pointer;
 }
 
 .btn-transparent:hover {
-  color: #000000;
+    color: #000000;
 
-  background: #ffffff;
+    background: #ffffff;
 }
+
+.search {
+   width: 1200px;
+   min-height: 540px;
+   margin: 0;
+   padding: 0;
+   
+  /*  display: block;
+    margin: 0 auto; */
+   
+   background-color: pink; /* временно */
+}
+
+.classifieds {
+	display: flex;
+	justify-content: space-between;
+	padding: 0 73px;
+	
+	background-color: orange; /* временно */
+}
+
+.column {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	width: 528px;
+}
+
+.column-1 {
+	width: 135px;
+	margin: 0;
+	margin-right: 30px;
+	
+	text-align:center;
+	
+	background-color: blue; /* временно */
+}
+
+.column-2 {
+	width: 363px;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	margin-right: 26px;
+	
+	background-color: red; /* временно */
+}
+
+.column-3 {
+	background-color: green; /* временно */
+}
+
+.sort-list {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-around;
+	list-style: none;
+	width: 260px;
+	margin: 0;
+	align-items: center;
+}
+
+.classifieds h3 {
+	margin: 0;
+	padding: 0;
+	text-align:center;
+    font-size: 19px;
+    line-height: 23px;
+}
+
+/* .classifieds-list {
+	display: flex;
+	flex-direction: column;
+}
+
+.classifieds-item {
+	display: flex;
+	justify-content: space-between;
+	margin: 0;
+} */ 
