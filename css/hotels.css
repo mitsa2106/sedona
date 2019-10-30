@@ -422,14 +422,16 @@ input[type="radio"].visually-hidden {
 	display: flex;
 	justify-content: space-between;
 	padding: 0 73px;
+	align-items: center;
 	
-	background-color: orange; /* временно */
+	background-color: white; /* временно */
 }
 
 .column {
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-start;
+	align-items: center;
 	width: 528px;
 }
 
@@ -437,10 +439,6 @@ input[type="radio"].visually-hidden {
 	width: 135px;
 	margin: 0;
 	margin-right: 30px;
-	
-	text-align:center;
-	
-	background-color: blue; /* временно */
 }
 
 .column-2 {
@@ -450,11 +448,12 @@ input[type="radio"].visually-hidden {
 	justify-content: flex-start;
 	margin-right: 26px;
 	
-	background-color: red; /* временно */
+	font-size: 12px;
+    line-height: 18px;
 }
 
 .column-3 {
-	background-color: green; /* временно */
+
 }
 
 .sort-list {
@@ -466,23 +465,37 @@ input[type="radio"].visually-hidden {
 	width: 260px;
 	margin: 0;
 	align-items: center;
+	cursor: pointer;
+}
+
+.sort-item {
+	color: #cacaca;
+	text-decoration: none; /* Убираем подчеркивание */
+    border-bottom: 1px dashed #cacaca;; /* Добавляем свою линию */ 
+}
+.sort-item:hover { /*наведение*/
+	color: #81b3d2;
+	text-decoration: none; /* Убираем подчеркивание */
+    border-bottom: 1px dashed #81b3d2; /* Добавляем свою линию */ 
+}
+
+.sort-item:active { /*нажатие*/
+	color: #000000;
+}
+
+.sort-item:focus { /*??????*/
+	color: #81b3d2;
 }
 
 .classifieds h3 {
 	margin: 0;
 	padding: 0;
-	text-align:center;
+	
     font-size: 19px;
     line-height: 23px;
 }
 
-/* .classifieds-list {
-	display: flex;
-	flex-direction: column;
-}
 
-.classifieds-item {
-	display: flex;
-	justify-content: space-between;
-	margin: 0;
-} */ 
+.icon-classifieds {
+	text-align: center;
+}
