@@ -453,7 +453,7 @@ input[type="radio"].visually-hidden {
 }
 
 .column-3 {
-
+    position: relative;
 }
 
 .sort-list {
@@ -495,7 +495,50 @@ input[type="radio"].visually-hidden {
     line-height: 23px;
 }
 
-
-.icon-classifieds {
-	text-align: center;
+.up-dir {
+	position: absolute;
+	top: -5px;
+	right: 23px;
+	
+	width: 11px;
+	height: 10px;
+	
+	background-image: url("../svg/up-dir.svg"); 
+	background-position: center;
+	background-repeat: no repeat;
+	
+	cursor: pointer;
 }
+
+.up-dir:hover { /*наведение*/
+	background-image: url("../svg/icon-up-dir.svg");
+}
+
+.up-dir:active { /*нажатие*/
+	background-image: url("../svg/up-p.svg");
+}
+
+.down-dir {
+	position: absolute;
+	top: -5px;
+	right: 0;
+	
+	width: 11px;
+	height: 10px;
+	
+	background-image: url("../svg/down-dir.svg"); 
+	background-position: center;
+	background-repeat: no repeat;
+	
+	cursor: pointer;
+}
+
+.down-dir:hover { /*наведение*/
+	background-image: url("../svg/icon-down-dir.svg");
+}
+
+.down-dir:active { /*нажатие*/
+	background-image: url("../svg/down-p.svg"); 
+}
+
+
