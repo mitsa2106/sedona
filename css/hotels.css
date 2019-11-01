@@ -14,13 +14,19 @@ body {
 	font-weight: 400;
 	color: #000000;
 	
-	background-color: #ffffff;
-	/* box-shadow: 0 0 10px rgba(242,242,242,0.5); /* Параметры тени #f2f2f2*/ */
+	background-color: #f2f2f2;/*  #ffffff; */
+}
+
+.body-wrapper {
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+	width: 1200px;
+	padding: 0;
+	margin: 0 auto; 
 }
 
 html, body {
 	min-width: 1200px;
-	min-height: 1750px;
+	min-height: 933px;
 }
 
 a {
@@ -409,26 +415,19 @@ input[type="radio"].visually-hidden {
 
 .search {
    width: 1200px;
-   min-height: 540px;
    margin: 0;
    padding: 0;
-   
-   background-color: pink; /* временно */
-   
-   /* background-image: url("../png/line-layer.png"); тонкая линия, подумать куда всавить между разделами
-   background-position: 0 0;
-   background-repeat: no-repeat;    */
+   background-image: url("../png/layer16.png");
 }
 
 .classifieds {
 	display: flex;
 	justify-content: space-between;
 	margin: 0;
-	padding: 15px 73px;
+	padding: 32px 73px;
 	align-items: center;
 	
-	background-color: white; /* временно */
-	
+	background-color: white; 
 }
 
 .column {
@@ -451,7 +450,11 @@ input[type="radio"].visually-hidden {
 	justify-content: flex-start;
 	
 	margin-right: 26px;
-	
+}
+
+.column-2 h4,
+.column-2 .sort-item {
+	margin: 0;
 	font-size: 12px;
     line-height: 18px;
 }
@@ -547,11 +550,14 @@ input[type="radio"].visually-hidden {
 }
 
 .classifieds-list {
-	background-color: orange; /* временно */
 	display: flex;
 	justify-content: space-between;
 	padding: 30px 73px;
 	align-items: center;
+	
+	background-image: url("../png/line-layer.png");
+	background-position: 0 0;
+	background-repeat: no-repeat;
 }
 
 .reservation {
@@ -566,7 +572,7 @@ input[type="radio"].visually-hidden {
 	margin-bottom: 10px;
 	
     font-size: 21px;
-    line-height: 22px;/* 26px; */
+    line-height: 22px;
 }
 
 .reservation-block {
@@ -581,7 +587,7 @@ input[type="radio"].visually-hidden {
 .reservation h4 {
 	margin: 0;
 	padding: 0;
-	margin-bottom: 12px;/* 16px; */
+	margin-bottom: 15px;
 	
 	font-size: 14px;
     line-height: 16px;
@@ -592,10 +598,171 @@ input[type="radio"].visually-hidden {
 	padding: 3px 17px;
 }
 
+.button:hover /*наведение*/ {
+	background-color: #669ec0;
+}
+
 .reservation .button-reserv {
 	padding: 3px 17px;
 	background-color: #766357; 
 	border: 1px solid #766357;
+}
+
+.reservation .button-reserv:hover /*наведение*/ {
+	background-color: #604e43;
+}
+
+.reservation .button-reserv:active /*нажатие*/{
+	background-color: #503e33;
+	opacity: 0.3;
+}
+
+.column-3 p {
+	padding: 3px 16px;
+	margin: 0;
+	margin-top: 61px;
+	box-sizing: border-box;
+	
+	font-size: 14px;
+    line-height: 21px;
+	
+	background-color: #f2f2f2;
+	border: 1px solid #f2f2f2;
+}
+
+.star,
+.star-1 {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	
+	width: 18px;
+	height: 17px;
+	
+	background-image: url("../svg/star.svg"); 
+	background-position: center;
+	background-repeat: no repeat;
+	
+	cursor: pointer;
+}
+
+.star-2 {
+	right: 23px;
+}
+
+.star-3 {
+	right: 48px;
+}
+
+.star-4 {
+	right: 72px;
+}
+
+.main-footer {
+	width: 1200px;
+	margin: 0 auto;
+	padding: 0;
+	
+	background-image: url("../png/line-layer.png");
+	background-position: 0 0;
+	background-repeat: no-repeat;
+}
+
+.footer-footer {
+	padding-top: 1px;
+}
+
+.footer-navigation {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	align-items: center;
+	
+	background-image: url("../png/layer-footer.png");
+	width: 1200px;
+	min-height: 120px;
+	
+	margin: 0;
+	padding: 0;
+
+	list-style: none;
+	text-align:  center;
+	
+}
+
+.visit h4 {
+	font-size: 21px;
+	line-height: 26px;
+	color: #000000;
+}
+
+.footer-social {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	width: 150px; 
+	margin: 0 auto;
+	padding: 0;
+	
+	list-style: none;
+}
+
+.social-button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 48px;
+	height: 46px;
+	
+	background-color: #81b3d2;
+	
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.social-button:hover { /*наведение*/
+	background-color: #669ec0;
+}
+
+.social-button:active { /*нажатие*/
+	opacity: 0.3;
+	background-color: #5496bd;
+}
+
+.social-tw {
+	background-image: url("../svg/twitter.svg");
+}
+
+.social-fb {
+	background-image: url("../svg/fb-icon.svg");
+}
+
+.social-yb {
+	background-image: url("../svg/youtube.svg");
+} 
+
+.html-academy {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	width: 200px; 
+	margin: 0 auto;
+	padding: 0;
+	
+	list-style: none;
+}
+
+.social-button-logo {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 114px;
+	height: 39px;
+}
+
+.social-ac {
+	background-image: url("../svg/logo-htmlacademy.svg");
 }
 
 
