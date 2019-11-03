@@ -532,7 +532,7 @@ input[type="radio"].visually-hidden {
 
 .modal {
 	position: fixed;
-	display: none; /*скрываем*/  
+   /*  display: none; /*скрываем*/   
 	
 	color: #000000;
 	background-color: #ffffff;
@@ -556,12 +556,16 @@ input[type="radio"].visually-hidden {
 }
 
 .modal-search {
-	top: 50%;
-	left: 50%;
-	/* display: none; */
+	position: absolute;
+	left: 50%; 
+	display: none;
 	padding: 55px;
 	width: 460px;
-	transform: translate(-50%, -50%); /*центрируем по центру модальное окно*/
+	/* transform: translate(-50%, -50%); */ /*центрируем по центру модальное окно*/
+}
+
+.modal-show {
+	display: block;	
 }
 
 .search-form .check{
@@ -697,55 +701,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 	transform: rotate(-45deg);
 }
 
-
-/*тестовый пример вставки иконки календаря, аналогично строке 599*/
-
-/* .search-form input[type="date"], */
-.search-form input[type="number"] {
-    position: relative;
-}
-/* 
-.search-form input[type="date"]::after {
-	content: "";
-	
-	position: absolute;
-	
-	width: 21px;
-	height: 22px;
-	
-	top: 8px;
-	left: 317px;
-	
-	background-image: url("../svg/calendar.svg")
-} */ 
-.search-form input[type="number"]::before {   /* ПОЧЕМУ НЕ РАБОТАЕТ? */
-	content: "";
-	
-	position: absolute;
-	
-	width: 12px;
-	height: 3px;
-	
-	top: 8px;
-	left: 12px;
-	
-	background-image: url("../svg/minus.svg")
-}
-
-
-.search-form input[type="number"]::after {
-	content: "";
-	
-	position: absolute;
-	
-	width: 11px;
-	height: 11px;
-	
-	top: 8px;
-	left: 90px; /* right: 12px; */
-	
-	background-image: url("../svg/plus.svg")
-}
 
 
 
