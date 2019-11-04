@@ -167,11 +167,13 @@ input[type="radio"].visually-hidden {
 
 .intro {
 	width: 1200px;
-	/* height: 510px; */
+	height: 510px; 
 	
 	background-image: url("../jpg/background-m.jpg");
 	background-position: top center;
 	background-repeat: no-repeat;
+	
+	position: relative;
 }
 
 .intro-wrapper {
@@ -205,7 +207,8 @@ input[type="radio"].visually-hidden {
 }
 
 .intro-5 {
-	margin-bottom: -6px; 
+	position: absolute;
+	top: 453px;
 }
 
 .advantages-intro {
@@ -229,13 +232,13 @@ input[type="radio"].visually-hidden {
 	
 	font-size: 21px;
 	line-height: 26px;
-	margin: 62px auto 0 auto;
+	margin: 58px auto 0 auto;
  }
  
  .advantages-intro p {
 	font-size: 14px;
 	line-height: 26px;
-	margin: 32px auto 53px auto;
+	margin: 30px auto 50px auto;
  }
  
 .advantages-list{
@@ -291,24 +294,29 @@ input[type="radio"].visually-hidden {
 	justify-content: space-around;
 	margin: 0;
 	padding-top: 55px;
-	padding-bottom: 85px;
+	padding-bottom: 80px;
 	width: 1200px;
 	
 	text-align:  center;
 }
 
+.advantages-icon .icon-1,
+.advantages-icon .icon-2 {
+	margin-top: 5px;
+}
+
 .advantages-icon h3 {
 	margin: 0;
-	margin-top: 30px;
+	margin-top: 28px;
 	font-size: 18px;
-	line-height: 21px;
+	line-height: 19px;
 }
 
 .advantages-icon p {
 	margin: 0;
-	margin-top: 30px;
+	margin-top: 28px;
 	font-size: 14px;
-	line-height: 21px;
+	line-height: 19px;
 }
 
 .advantages-2 {
